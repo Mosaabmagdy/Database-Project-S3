@@ -42,7 +42,7 @@ CREATE TABLE payments (
 
 CREATE TABLE offices (
     office_id INT PRIMARY KEY AUTO_INCREMENT,
-    office_location VARCHAR(255) NOT NULL
+    office_location VARCHAR(255) ENUM('NorthAmerica_NewYork','Asia_Riyadh','SouthAmerica_Rio de Janeiro','Africa_Cairo','Europe_Munich','Australia_Sydney') NOT NULL
 );
 
 
@@ -76,9 +76,12 @@ VALUES
 (2, 500.50, '2024-12-16'), -- Payment for reservation 2
 (3, 150.75, '2024-12-17') -- Payment for reservation 3
 
+
 INSERT INTO offices (office_id, office_location) 
 VALUES 
-(1, 'Downtown Branch'),
-(2, 'Airport Branch'),
-(3, 'Suburban Branch');
+(1, 'Australia_Sydney'),
+(2, 'Australia_Sydney'),
+(3, 'Asia_Riyadh');
+
+
 
