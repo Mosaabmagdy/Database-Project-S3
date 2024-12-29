@@ -42,7 +42,7 @@ CREATE TABLE payments (
 
 CREATE TABLE offices (
     office_id INT PRIMARY KEY AUTO_INCREMENT,
-    office_location VARCHAR(255) NOT NULL
+    office_location VARCHAR(255) ENUM('NorthAmerica_NewYork','Asia_Riyadh','SouthAmerica_Rio de Janeiro','Africa_Cairo','Europe_Munich','Australia_Sydney') NOT NULL
 );
 
 
